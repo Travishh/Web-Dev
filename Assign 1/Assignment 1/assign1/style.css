@@ -1,0 +1,80 @@
+body {
+  background-color: #8daa9d;
+  margin: 0;
+}
+
+#container {
+  width: 100%;
+  position: relative;
+}
+.header {
+  padding: 3px;
+  padding-left: 20px;
+  background-color: #fbf5f3;
+}
+#body {
+  padding: 8px;
+  background-color: #8daa9d;
+}
+
+.content {
+  background-color: white;
+  padding: 25px;
+  padding-top: 2px;
+  font-size: large;
+}
+.links {
+  display: flex;
+  padding-top: 10px;
+  justify-content: space-evenly;
+}
+.links a {
+  background-color: #ece8e7;
+  color: black;
+  border: 2px solid black;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+.links a:hover,
+.links a:active {
+  background-color: #b0c0bc;
+  color: black;
+}
+
+.answers {
+  margin-left: 40px;
+}
+.references {
+  margin-left: 80px;
+}
+.form {
+  padding-top: 20px;
+  font-size: large;
+}
+.result {
+  padding: 20px;
+  padding-top: 0px;
+  border-bottom: 2px solid black;
+}
+.button {
+  transition-duration: 0.4s;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 15px;
+  margin-right: 25px;
+}
+.button:hover {
+  background-color: #8daa9d;
+  color: white;
+}
+#searchButton {
+  transition-duration: 0.4s;
+  border-radius: 8px;
+  padding: 4px 12px;
+  font-size: 13px;
+}
+#searchButton:hover {
+  background-color: #8daa9d;
+  color: white;
+}
