@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<HTML XMLns="http://www.w3.org/1999/xHTML"> 
+    <head> 
+        <title>Cabs Online Booking</title> 
+        <script type="text/javascript" src="xhr.js"></script>
+        <script type="text/javascript" src="booking.js"> </script>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head> 
+    <body>
+        <div class="container">
+            <div class="header">
+                <H1><center>Cabs Online Booking &nbsp;</center></H1>
+            </div>
+            <div class="forms">
+            <form class="booking">
+                <label>Customer Name: </label>
+                <input type="text" name="cname" id="cname" placeholder="Required" required><br><br>
+                <label>Phone Number: </label>
+                <input type="text" name="phone" id="phone" placeholder="Required" required><br><br> 
+                <label>Unit Number: </label>
+                <input type="text" name="unumber" id="unumber" placeholder="Optional"><br><br> 
+                <label>Street Number: </label>
+                <input type="text" name="snumber" id="snumber" placeholder="Required" required><br><br>
+                <label>Street Name: </label>
+                <input type="text" name="stname" id="stname" placeholder="Required" required><br><br> 
+                <label>Suburb: </label>
+                <input type="text" name="sbname" id="sbname" placeholder="Optional"><br><br> 
+                <label>Destination Suburb: </label>
+                <input type="text" name="dsbname" id="dsbname" placeholder="Optional"><br><br> 
+                <label>Pick-Up Date: </label>
+                <input type="text" name="date" id="date" placeholder="Required" value="" required><br><br> 
+                <label>Pick-Up Time: </label>
+                <input type="time" name="time" id="time" required> (hh:mm AM/PM)<br><br>
+                <input class="inputSubmit" name="submit" type = "button" onClick = "booking()" value = "Submit">
+            </form>
+            </div>
+            <div id="targetDiv"> 
+                <p>The Display data will go here.</p>  
+            </div> 
+            <div class="links">
+                <a
+                  href="http://szf2254.cmslamp14.aut.ac.nz/assign2/admin.html"
+                  >Go to Admin Page</a
+                >
+              </div>
+        </div>
+   </body> 
+  </HTML>
+
+  <script>
+      //get current date and display as dd/mm/yyyy
+        var date = new Date();
+
+        var day = date.getDate();
+        var month = date.getMonth() + 1;
+        var year = date.getFullYear();
+
+        if (month < 10) month = "0" + month;
+        if (day < 10) day = "0" + day;
+
+        var today = day + "/" + month + "/" + year;       
+        document.getElementById("date").value = today;
+       
+
+  </script>
+  

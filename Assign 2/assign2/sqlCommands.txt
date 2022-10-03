@@ -1,0 +1,16 @@
+//Travis Hun_19056383
+
+//Create table command
+create table if not exists $sql_table (
+    booking_No varchar(50) primary key, 
+    cus_Name varchar(50), 
+    phone_No varchar(50), 
+    unit_No varchar(50), 
+    street_No varchar(30), 
+    street_Name varchar(100), 
+    suburb varchar(100), 
+    dest_Suburb varchar(100), 
+    pickup_Date varchar(30), 
+    pickup_Time time, 
+    booking_Date varchar(50), 
+    status varchar(50))

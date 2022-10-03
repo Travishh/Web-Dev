@@ -1,0 +1,51 @@
+.Booked{
+    width:fit-content;
+    border: 2px solid;
+    border-radius: 1px;
+    padding: 10px;
+}
+.FormFail{
+    color: blue;
+}
+.booking label{
+    width: 150px;
+    display: inline-block;
+    text-align: right;
+}
+.content table{
+    margin-top: 20px;
+}
+.header {
+    padding: 3px;
+    padding-left: 20px;
+    background-color: #fdb813;
+  }
+.forms{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #FAF9F6;
+}
+.inputSubmit{
+    margin-left: 120px;
+}
+
+.links {
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-evenly;
+  }
+  .links a {
+    background-color: #ece8e7;
+    color: black;
+    border: 2px solid black;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .links a:hover,
+  .links a:active {
+    background-color: #b0c0bc;
+    color: black;
+  }
